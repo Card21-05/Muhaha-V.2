@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloody Mary</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f7f3eb; /* สีขาวแบบหินอ่อน */
+            color: #4a3b2b; /* สีน้ำตาลอุ่น */
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #003049; /* สีน้ำเงินเข้ม */
+            color: #e9c46a; /* สีทอง */
+            text-align: center;
+            padding: 30px;
+            border-bottom: 4px solid #e76f51; /* เส้นขอบสีทองแดง */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        header nav a {
+            color: #e9c46a;
+            text-decoration: none;
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        header nav a:hover {
+            color: #f4a261;
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+        }
+
+        .cocktail-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 3px solid #003049;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 3px solid #e9c46a; /* ขอบสีทอง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .details-container {
+            max-width: 600px;
+        }
+
+        .details-container h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #003049; /* สีน้ำเงินเข้ม */
+            border-bottom: 2px dashed #e9c46a; /* เส้นขอบแบบวินเทจ */
+            padding-bottom: 5px;
+        }
+
+        .details-container h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #003049;
+        }
+
+        .details-container p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .details-container .ingredients {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .details-container .ingredients li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-style: italic;
+            position: relative;
+        }
+
+        .details-container .ingredients li::before {
+            content: "◆"; /* สัญลักษณ์วินเทจ */
+            color: #e76f51; /* สีทองแดง */
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .details-container .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a3b2b;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px #e9c46a;
+        }
+
+        /* Buttons */
+        .order-button, .back-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background-color: #e9c46a; /* สีทอง */
+            color: #003049;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-button:hover, .back-button:hover {
+            background-color: #f4a261; /* เปลี่ยนเป็นสีทองแดงเมื่อ hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #003049;
+            color: #e9c46a;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-family: 'Times New Roman', serif;
+            border-top: 4px solid #e76f51;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bloody Mary</h1>
+        <nav>
+            <a href="menu.html">Back to Menu</a>
+        </nav>
+    </header>
+    <main>
+        <section class="cocktail-details">
+            <div class="image-container">
+                <img src="https://www.bhg.com/thmb/vsos8DEy19NYQD1Js4gjMSLES24=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bloody-mary-mix-RU272432-844ec68c28e5457c8f26c1edbcf7f20f.jpg">
+            </div>
+            <div class="details-container">
+                <h2>Bloody Mary</h2>
+                <p>This classic cocktail combines vodka, tomato juice, and spices.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>2 oz vodka</li>
+                    <li>4 oz tomato juice</li>
+                    <li>1/2 oz lemon juice</li>
+                    <li>1/4 tsp Worcestershire sauce</li>
+                    <li>Tabasco sauce to taste</li>
+                    <li>Celery stick and lime wedge (for garnish)</li>
+                </ul>
+                <h3>Price:</h3>
+                <p class="price">350 Baht</p>
+                <a href="thankyou.html">
+                    <button class="order-button">Order Now</button>
+                </a>
+                <a href="menu.html" class="back-button">Back to Menu</a>                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Cormorant Garamond', serif; /* ฟอนต์แนวกรีก */
+    background-color: #fdf8ef; /* สีครีมวินเทจ */
+    color: #4a3b2f; /* สีน้ำตาลเข้ม */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+/* Greek Border */
+.greek-border {
+    border: 10px solid transparent;
+    padding: 20px;
+    border-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Greek-key-pattern-border.svg/1024px-Greek-key-pattern-border.svg.png') 30 stretch;
+    background: linear-gradient(135deg, #faf3e0, #f0e1d2); /* Gradient สีวินเทจ */
+}
+
+/* Thank You Message */
+.thank-you-message h1 {
+    font-size: 2.8em;
+    color: #3b2f2f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-message p {
+    font-size: 1.3em;
+    color: #6b5b3a;
+    margin-bottom: 25px;
+}
+
+/* Cocktail Image */
+.cocktail-image img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 12px;
+    border: 5px solid #d4c8a6; /* ขอบสีทอง */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Order Status */
+.order-status p {
+    font-size: 1.2em;
+    color: #6b5b3a;
+    margin-top: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Back Home Button */
+.back-home-btn {
+    background-color: #d4c8a6; /* สีทองวินเทจ */
+    color: #3b2f2f;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-home-btn:hover {
+    background-color: #bfa37b; /* สีทองเข้ม */
+    transform: translateY(-3px);
+}

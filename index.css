@@ -1,0 +1,123 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Times New Roman', serif;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    border: 2px solid #b3b3b3;
+    background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png'); /* Optional texture */
+}
+
+/* Title */
+h2 {
+    font-size: 28px;
+    font-family: 'Garamond', serif;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #4A90E2; /* Greek theme touch */
+    padding-bottom: 10px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #5d5d5d;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #4A90E2;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    background-color: #fafafa;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2A4D7F;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #2A4D7F;
+}
+
+/* Sign Up Link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #4A90E2;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Decorative Greek border */
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background-color: #4A90E2;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}

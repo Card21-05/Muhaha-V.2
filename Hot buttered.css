@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f7f3eb; /* สีคล้ายหินอ่อน */
+    color: #4a3b2b; /* สีน้ำตาลอบอุ่น */
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background-color: #14213d; /* สีน้ำเงินเข้ม */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #e9c46a; /* เส้นขอบสีทอง */
+}
+
+header h1 {
+    font-family: 'Garamond', serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    color: #e9c46a; /* สีทอง */
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+}
+
+header .nav-links li a:hover {
+    color: #f4a261; /* สีทองอ่อน */
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+}
+
+.cocktail-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid #14213d; /* กรอบสีน้ำเงินเข้ม */
+    border-radius: 15px;
+    background-color: #fff; /* สีพื้นหลังหรูหรา */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เงาเพื่อเพิ่มมิติ */
+    padding: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 3px solid #e9c46a; /* ขอบรูปสีทอง */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.details-container {
+    max-width: 600px;
+}
+
+.details-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #14213d; /* สีน้ำเงินเข้ม */
+    border-bottom: 2px dashed #e9c46a; /* เส้นคั่นสไตล์วินเทจ */
+    padding-bottom: 10px;
+}
+
+.details-container h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #14213d;
+}
+
+.details-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.details-container .ingredients {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.details-container .ingredients li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    font-style: italic;
+}
+
+.details-container .ingredients li::before {
+    content: "◆"; /* สัญลักษณ์แบบวินเทจ */
+    color: #e76f51; /* สีทองแดง */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.details-container .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a3b2b;
+    margin-top: 30px;
+    text-shadow: 1px 1px 2px #e9c46a; /* เงาสีทอง */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #14213d; /* สีน้ำเงินเข้ม */
+    color: #e9c46a; /* สีทอง */
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+    border-top: 4px solid #e76f51; /* เส้นขอบสีทองแดง */
+}
